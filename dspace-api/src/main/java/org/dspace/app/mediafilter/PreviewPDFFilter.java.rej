@@ -1,0 +1,41 @@
+--- dspace-api/src/main/java/org/dspace/app/mediafilter/PreviewPDFFilter.java	2012-05-14 17:05:56.000000000 +0100
++++ dspace-api/src/main/java/org/dspace/app/mediafilter/PreviewPDFFilter.java	2012-05-14 17:08:12.000000000 +0100
+@@ -183,8 +183,8 @@
+         }
+         bos.close();
+         bis.close();
+-        manipulatePdf(infile.getCanonicalPath(),image_file,infile1.getCanonicalPath(),logfile);
+-    	filesize = (int) infile1.length();
++        // manipulatePdf(infile.getCanonicalPath(),image_file,infile1.getCanonicalPath(),logfile);
++    	filesize = (int) infile.length();
+         previewsize = (int) filesize*previewpercentage/100;
+         if (previewsize>maxpreviewsize){
+                 previewpercentage=(maxpreviewsize/filesize)/100;
+@@ -199,8 +199,8 @@
+             
+             // this version doese not support portfolio pdf
+ 
+-            reader = new PdfReader(infile1.getCanonicalPath());
+-            PdfReader reader1 = new PdfReader(infile1.getCanonicalPath());
++            reader = new PdfReader(infile.getCanonicalPath());
++            PdfReader reader1 = new PdfReader(infile.getCanonicalPath());
+             PdfReaderContentParser parser = new PdfReaderContentParser(reader1);
+             boolean isPortfolio = reader.getCatalog().contains(PdfName.COLLECTION);
+             reader.close();
+@@ -208,14 +208,14 @@
+            byte[] password = (ownerpass != null ? ownerpass.getBytes() : null);
+            if (security)
+             {
+-               reader = new PdfReader(infile1.getCanonicalPath(), password);
++               reader = new PdfReader(infile.getCanonicalPath(), password);
+                permissions = reader.getPermissions();
+                version = reader.getPdfVersion();
+                reader.close();
+             }
+ 
+ 
+-           reader = new PdfReader(infile1.getCanonicalPath(), password);
++           reader = new PdfReader(infile.getCanonicalPath(), password);
+            reader.consolidateNamedDestinations();
+            document = new Document(reader.getPageSizeWithRotation(1));
+            Document blank = new Document(reader.getPageSizeWithRotation(1));

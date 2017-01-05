@@ -1,0 +1,46 @@
+--- BitstreamServlet.java.org 2011-05-27 14:34:36.000000000 +0900
++++ BitstreamServlet.java 2011-09-10 11:43:09.468750000 +0900
+@@ -9,6 +9,8 @@
+ 
+ import java.io.IOException;
+ import java.io.InputStream;
++import java.io.ByteArrayInputStream;
++import java.io.ByteArrayOutputStream;
+ import java.sql.SQLException;
+ 
+ import javax.servlet.ServletConfig;
+@@ -207,15 +211,28 @@
+         
+         // Pipe the bits
+         InputStream is = bitstream.retrieve();
+-     
+-       // Set the response MIME type
++        // Content length
++        String clength = String.valueOf(bitstream.getSize());
++        // Set the response MIME type
+         response.setContentType(bitstream.getFormat().getMIMEType());
+ 
+-        // Response length
+-        response.setHeader("Content-Length", String
+-                .valueOf(bitstream.getSize()));
++        // Set cover page if MIME type of the bitstream is PDF
++        if (bitstream.getFormat().getMIMEType().equals("application/pdf"))
++        {
++            CoverPage cover = new CoverPage(context, item, bitstream);
++            ByteArrayOutputStream byteout = cover.getConcatenatePDF();
++            if (byteout != null)
++            {
++                is.close();
++                clength = String.valueOf(byteout.size());
++                is = new ByteArrayInputStream(byteout.toByteArray());
++            }
++        }
++
++        // Set Response length
++        response.setHeader("Content-Length", clength);
+ 
+-       if(threshold != -1 && bitstream.getSize() >= threshold)
++       if(threshold != -1 && Integer.valueOf(clength) >= threshold)
+        {
+            UIUtil.setBitstreamDisposition(bitstream.getName(), request, response);
+        }

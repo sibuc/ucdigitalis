@@ -1,0 +1,660 @@
+[INFO] Scanning for projects...
+[INFO] Reactor build order: 
+[INFO]   DSpace Parent Project
+[INFO]   DSpace Kernel :: API and Implementation
+[INFO]   DSpace Solr Statistics Logging Client Library
+[INFO]   DSpace UI :: Shared JS code
+[INFO]   DSpace JSP-UI
+[INFO]   DSpace JSP-UI :: API and Implementation
+[INFO]   DSpace JSP-UI :: Web Application Resources
+[INFO]   DSpace XML-UI (Manakin)
+[INFO]   DSpace XML-UI (Manakin) :: Wing-Framework
+[INFO]   DSpace XML-UI (Manakin) :: API and Core Aspects
+[INFO]   DSpace XML-UI (Manakin) :: Web Application Resources
+[INFO]   DSpace LNI
+[INFO]   DSpace LNI :: Core Implementation
+[INFO]   DSpace LNI :: Web Application Resources
+[INFO]   DSpace LNI :: CLI Client Application
+[INFO]   DSpace OAI
+[INFO]   DSpace OAI :: API and Implementation
+[INFO]   DSpace OAI :: Web Application Resources
+[INFO]   DSpace OAI Extended (by KEEP Solutions)
+[INFO]   DSpace OAI Extended (by KEEP Solutions) :: API and Implementation
+[INFO]   DSpace OAI Extended (by KEEP Solutions) :: Web Application Resources
+[INFO]   DSpace SWORD
+[INFO]   DSpace SWORD :: API and Implementation
+[INFO]   DSpace SWORD :: Web Application Resources
+[INFO]   DSpace Addon Modules
+[INFO]   DSpace XML-UI (Manakin) :: Web Application
+[INFO]   DSpace LNI :: Web Application
+[INFO]   DSpace OAI :: Web Application
+[INFO]   DSpace OAI Extended :: Web Application
+[INFO]   Cover Page module
+[INFO]   DSpace JSP-UI :: Web Application
+[INFO]   DSpace SWORD :: Web Application
+[INFO]   DSpace SOLR :: Web Application
+[INFO]   DSpace Assembly and Configuration
+[INFO] ------------------------------------------------------------------------
+[INFO] Building DSpace Parent Project
+[INFO]    task-segment: [package]
+[INFO] ------------------------------------------------------------------------
+[INFO] [site:attach-descriptor {execution: default-attach-descriptor}]
+[INFO] ------------------------------------------------------------------------
+[INFO] Building DSpace Kernel :: API and Implementation
+[INFO]    task-segment: [package]
+[INFO] ------------------------------------------------------------------------
+[INFO] [resources:resources {execution: default-resources}]
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 5 resources
+[INFO] [compiler:compile {execution: default-compile}]
+[INFO] Nothing to compile - all classes are up to date
+[INFO] [resources:testResources {execution: default-testResources}]
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /dspace/ucdigitalis-src/dspace162-src-pombalina/dspace-api/src/test/resources
+[INFO] [compiler:testCompile {execution: default-testCompile}]
+[INFO] No sources to compile
+[INFO] [surefire:test {execution: default-test}]
+[INFO] No tests to run.
+[INFO] [jar:jar {execution: default-jar}]
+[INFO] ------------------------------------------------------------------------
+[INFO] Building DSpace Solr Statistics Logging Client Library
+[INFO]    task-segment: [package]
+[INFO] ------------------------------------------------------------------------
+[INFO] [resources:resources {execution: default-resources}]
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /dspace/ucdigitalis-src/dspace162-src-pombalina/dspace-stats/src/main/resources
+[INFO] [compiler:compile {execution: default-compile}]
+[INFO] Nothing to compile - all classes are up to date
+[INFO] [resources:testResources {execution: default-testResources}]
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /dspace/ucdigitalis-src/dspace162-src-pombalina/dspace-stats/src/test/resources
+[INFO] [compiler:testCompile {execution: default-testCompile}]
+[INFO] No sources to compile
+[INFO] [surefire:test {execution: default-test}]
+[INFO] No tests to run.
+[INFO] [jar:jar {execution: default-jar}]
+[INFO] ------------------------------------------------------------------------
+[INFO] Building DSpace UI :: Shared JS code
+[INFO]    task-segment: [package]
+[INFO] ------------------------------------------------------------------------
+[INFO] [resources:resources {execution: default-resources}]
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /dspace/ucdigitalis-src/dspace162-src-pombalina/dspace-ui-shared/src/main/resources
+[INFO] [compiler:compile {execution: default-compile}]
+[INFO] No sources to compile
+[INFO] [resources:testResources {execution: default-testResources}]
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /dspace/ucdigitalis-src/dspace162-src-pombalina/dspace-ui-shared/src/test/resources
+[INFO] [compiler:testCompile {execution: default-testCompile}]
+[INFO] No sources to compile
+[INFO] [surefire:test {execution: default-test}]
+[INFO] No tests to run.
+[INFO] [war:war {execution: default-war}]
+[INFO] Packaging webapp
+[INFO] Assembling webapp[dspace-ui-shared] in [/dspace/ucdigitalis-src/dspace162-src-pombalina/dspace-ui-shared/target/dspace-ui-shared-1.6.2]
+[INFO] Processing war project
+[INFO] Copying webapp resources[/dspace/ucdigitalis-src/dspace162-src-pombalina/dspace-ui-shared/src/main/webapp]
+[INFO] Webapp assembled in [23 msecs]
+[INFO] Building war: /dspace/ucdigitalis-src/dspace162-src-pombalina/dspace-ui-shared/target/dspace-ui-shared-1.6.2.war
+[INFO] ------------------------------------------------------------------------
+[INFO] Building DSpace JSP-UI
+[INFO]    task-segment: [package]
+[INFO] ------------------------------------------------------------------------
+[INFO] [site:attach-descriptor {execution: default-attach-descriptor}]
+[INFO] ------------------------------------------------------------------------
+[INFO] Building DSpace JSP-UI :: API and Implementation
+[INFO]    task-segment: [package]
+[INFO] ------------------------------------------------------------------------
+[INFO] [resources:resources {execution: default-resources}]
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /dspace/ucdigitalis-src/dspace162-src-pombalina/dspace-jspui/dspace-jspui-api/src/main/resources
+[INFO] artifact org.dspace:dspace-api-lang: checking for updates from java.net
+[INFO] [compiler:compile {execution: default-compile}]
+[INFO] Compiling 1 source file to /dspace/ucdigitalis-src/dspace162-src-pombalina/dspace-jspui/dspace-jspui-api/target/classes
+[INFO] [resources:testResources {execution: default-testResources}]
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /dspace/ucdigitalis-src/dspace162-src-pombalina/dspace-jspui/dspace-jspui-api/src/test/resources
+[INFO] [compiler:testCompile {execution: default-testCompile}]
+[INFO] No sources to compile
+[INFO] [surefire:test {execution: default-test}]
+[INFO] No tests to run.
+[INFO] [jar:jar {execution: default-jar}]
+[INFO] Building jar: /dspace/ucdigitalis-src/dspace162-src-pombalina/dspace-jspui/dspace-jspui-api/target/dspace-jspui-api-1.6.2.jar
+[INFO] ------------------------------------------------------------------------
+[INFO] Building DSpace JSP-UI :: Web Application Resources
+[INFO]    task-segment: [package]
+[INFO] ------------------------------------------------------------------------
+[INFO] [resources:resources {execution: default-resources}]
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 0 resource
+[INFO] [compiler:compile {execution: default-compile}]
+[INFO] No sources to compile
+[INFO] [resources:testResources {execution: default-testResources}]
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /dspace/ucdigitalis-src/dspace162-src-pombalina/dspace-jspui/dspace-jspui-webapp/src/test/resources
+[INFO] [compiler:testCompile {execution: default-testCompile}]
+[INFO] No sources to compile
+[INFO] [surefire:test {execution: default-test}]
+[INFO] No tests to run.
+[INFO] [war:war {execution: default-war}]
+[INFO] Packaging webapp
+[INFO] Assembling webapp[dspace-jspui-webapp] in [/dspace/ucdigitalis-src/dspace162-src-pombalina/dspace-jspui/dspace-jspui-webapp/target/dspace-jspui-webapp-1.6.2]
+[INFO] Processing war project
+[INFO] Copying webapp webResources[/dspace/ucdigitalis-src/dspace162-src-pombalina/dspace-jspui/dspace-jspui-webapp/src/main/webapp] to[/dspace/ucdigitalis-src/dspace162-src-pombalina/dspace-jspui/dspace-jspui-webapp/target/dspace-jspui-webapp-1.6.2]
+[INFO] Copying webapp resources[/dspace/ucdigitalis-src/dspace162-src-pombalina/dspace-jspui/dspace-jspui-webapp/src/main/webapp]
+[INFO] Processing overlay[ id org.dspace:dspace-ui-shared]
+[INFO] Webapp assembled in [244 msecs]
+[INFO] Building war: /dspace/ucdigitalis-src/dspace162-src-pombalina/dspace-jspui/dspace-jspui-webapp/target/dspace-jspui-webapp-1.6.2.war
+[INFO] ------------------------------------------------------------------------
+[INFO] Building DSpace XML-UI (Manakin)
+[INFO]    task-segment: [package]
+[INFO] ------------------------------------------------------------------------
+[INFO] [site:attach-descriptor {execution: default-attach-descriptor}]
+[INFO] ------------------------------------------------------------------------
+[INFO] Building DSpace XML-UI (Manakin) :: Wing-Framework
+[INFO]    task-segment: [package]
+[INFO] ------------------------------------------------------------------------
+[INFO] [resources:resources {execution: default-resources}]
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /dspace/ucdigitalis-src/dspace162-src-pombalina/dspace-xmlui/dspace-xmlui-wing/src/main/resources
+[INFO] [compiler:compile {execution: default-compile}]
+[INFO] Nothing to compile - all classes are up to date
+[INFO] [resources:testResources {execution: default-testResources}]
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /dspace/ucdigitalis-src/dspace162-src-pombalina/dspace-xmlui/dspace-xmlui-wing/src/test/resources
+[INFO] [compiler:testCompile {execution: default-testCompile}]
+[INFO] No sources to compile
+[INFO] [surefire:test {execution: default-test}]
+[INFO] No tests to run.
+[INFO] [jar:jar {execution: default-jar}]
+[INFO] ------------------------------------------------------------------------
+[INFO] Building DSpace XML-UI (Manakin) :: API and Core Aspects
+[INFO]    task-segment: [package]
+[INFO] ------------------------------------------------------------------------
+[INFO] [resources:resources {execution: default-resources}]
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 11 resources
+[INFO] [compiler:compile {execution: default-compile}]
+[INFO] Nothing to compile - all classes are up to date
+[INFO] [resources:testResources {execution: default-testResources}]
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /dspace/ucdigitalis-src/dspace162-src-pombalina/dspace-xmlui/dspace-xmlui-api/src/test/resources
+[INFO] [compiler:testCompile {execution: default-testCompile}]
+[INFO] No sources to compile
+[INFO] [surefire:test {execution: default-test}]
+[INFO] No tests to run.
+[INFO] [jar:jar {execution: default-jar}]
+[INFO] ------------------------------------------------------------------------
+[INFO] Building DSpace XML-UI (Manakin) :: Web Application Resources
+[INFO]    task-segment: [package]
+[INFO] ------------------------------------------------------------------------
+[INFO] [resources:resources {execution: default-resources}]
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /dspace/ucdigitalis-src/dspace162-src-pombalina/dspace-xmlui/dspace-xmlui-webapp/src/main/resources
+[INFO] [compiler:compile {execution: default-compile}]
+[INFO] No sources to compile
+[INFO] [resources:testResources {execution: default-testResources}]
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /dspace/ucdigitalis-src/dspace162-src-pombalina/dspace-xmlui/dspace-xmlui-webapp/src/test/resources
+[INFO] [compiler:testCompile {execution: default-testCompile}]
+[INFO] No sources to compile
+[INFO] [surefire:test {execution: default-test}]
+[INFO] No tests to run.
+[INFO] [war:war {execution: default-war}]
+[INFO] Packaging webapp
+[INFO] Assembling webapp[dspace-xmlui-webapp] in [/dspace/ucdigitalis-src/dspace162-src-pombalina/dspace-xmlui/dspace-xmlui-webapp/target/dspace-xmlui-webapp-1.6.2]
+[INFO] Processing war project
+[INFO] Copying webapp webResources[/dspace/ucdigitalis-src/dspace162-src-pombalina/dspace-xmlui/dspace-xmlui-webapp/src/main/webapp] to[/dspace/ucdigitalis-src/dspace162-src-pombalina/dspace-xmlui/dspace-xmlui-webapp/target/dspace-xmlui-webapp-1.6.2]
+[INFO] Copying webapp resources[/dspace/ucdigitalis-src/dspace162-src-pombalina/dspace-xmlui/dspace-xmlui-webapp/src/main/webapp]
+[INFO] Processing overlay[ id org.dspace:dspace-ui-shared]
+[INFO] Webapp assembled in [57 msecs]
+[INFO] Building war: /dspace/ucdigitalis-src/dspace162-src-pombalina/dspace-xmlui/dspace-xmlui-webapp/target/dspace-xmlui-webapp-1.6.2.war
+[INFO] ------------------------------------------------------------------------
+[INFO] Building DSpace LNI
+[INFO]    task-segment: [package]
+[INFO] ------------------------------------------------------------------------
+[INFO] [site:attach-descriptor {execution: default-attach-descriptor}]
+[INFO] ------------------------------------------------------------------------
+[INFO] Building DSpace LNI :: Core Implementation
+[INFO]    task-segment: [package]
+[INFO] ------------------------------------------------------------------------
+[INFO] [resources:resources {execution: default-resources}]
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /dspace/ucdigitalis-src/dspace162-src-pombalina/dspace-lni/dspace-lni-core/src/main/resources
+[INFO] [compiler:compile {execution: default-compile}]
+[INFO] Nothing to compile - all classes are up to date
+[INFO] [resources:testResources {execution: default-testResources}]
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /dspace/ucdigitalis-src/dspace162-src-pombalina/dspace-lni/dspace-lni-core/src/test/resources
+[INFO] [compiler:testCompile {execution: default-testCompile}]
+[INFO] No sources to compile
+[INFO] [surefire:test {execution: default-test}]
+[INFO] No tests to run.
+[INFO] [jar:jar {execution: default-jar}]
+[INFO] ------------------------------------------------------------------------
+[INFO] Building DSpace LNI :: Web Application Resources
+[INFO]    task-segment: [package]
+[INFO] ------------------------------------------------------------------------
+[INFO] [resources:resources {execution: default-resources}]
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /dspace/ucdigitalis-src/dspace162-src-pombalina/dspace-lni/dspace-lni-webapp/src/main/resources
+[INFO] [compiler:compile {execution: default-compile}]
+[INFO] No sources to compile
+[INFO] [resources:testResources {execution: default-testResources}]
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /dspace/ucdigitalis-src/dspace162-src-pombalina/dspace-lni/dspace-lni-webapp/src/test/resources
+[INFO] [compiler:testCompile {execution: default-testCompile}]
+[INFO] No sources to compile
+[INFO] [surefire:test {execution: default-test}]
+[INFO] No tests to run.
+[INFO] [war:war {execution: default-war}]
+[INFO] Packaging webapp
+[INFO] Assembling webapp[dspace-lni-webapp] in [/dspace/ucdigitalis-src/dspace162-src-pombalina/dspace-lni/dspace-lni-webapp/target/dspace-lni-webapp-1.6.2]
+[INFO] Processing war project
+[INFO] Copying webapp webResources[/dspace/ucdigitalis-src/dspace162-src-pombalina/dspace-lni/dspace-lni-webapp/src/main/webapp] to[/dspace/ucdigitalis-src/dspace162-src-pombalina/dspace-lni/dspace-lni-webapp/target/dspace-lni-webapp-1.6.2]
+[INFO] Copying webapp resources[/dspace/ucdigitalis-src/dspace162-src-pombalina/dspace-lni/dspace-lni-webapp/src/main/webapp]
+[INFO] Webapp assembled in [21 msecs]
+[INFO] Building war: /dspace/ucdigitalis-src/dspace162-src-pombalina/dspace-lni/dspace-lni-webapp/target/dspace-lni-webapp-1.6.2.war
+[INFO] ------------------------------------------------------------------------
+[INFO] Building DSpace LNI :: CLI Client Application
+[INFO]    task-segment: [package]
+[INFO] ------------------------------------------------------------------------
+[INFO] [resources:resources {execution: default-resources}]
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] [compiler:compile {execution: default-compile}]
+[INFO] Nothing to compile - all classes are up to date
+[INFO] [resources:testResources {execution: default-testResources}]
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /dspace/ucdigitalis-src/dspace162-src-pombalina/dspace-lni/dspace-lni-client/src/test/resources
+[INFO] [compiler:testCompile {execution: default-testCompile}]
+[INFO] No sources to compile
+[INFO] [surefire:test {execution: default-test}]
+[INFO] No tests to run.
+[INFO] [jar:jar {execution: default-jar}]
+[INFO] [assembly:attached {execution: default}]
+[INFO] Processing DependencySet (output=)
+[INFO] Expanding: /home/dspace/.m2/repository/javax/activation/activation/1.1/activation-1.1.jar into /tmp/archived-file-set.2031137805.tmp
+[INFO] Expanding: /home/dspace/.m2/repository/javax/mail/mail/1.4/mail-1.4.jar into /tmp/archived-file-set.2119245303.tmp
+[INFO] Expanding: /home/dspace/.m2/repository/jdom/jdom/1.0/jdom-1.0.jar into /tmp/archived-file-set.1759764325.tmp
+[INFO] Expanding: /home/dspace/.m2/repository/wsdl4j/wsdl4j/1.5.1/wsdl4j-1.5.1.jar into /tmp/archived-file-set.1774769532.tmp
+[INFO] Expanding: /home/dspace/.m2/repository/commons-discovery/commons-discovery/0.2/commons-discovery-0.2.jar into /tmp/archived-file-set.1795545973.tmp
+[INFO] Expanding: /home/dspace/.m2/repository/commons-logging/commons-logging/1.0.4/commons-logging-1.0.4.jar into /tmp/archived-file-set.1709746968.tmp
+[INFO] Expanding: /home/dspace/.m2/repository/commons-cli/commons-cli/1.0/commons-cli-1.0.jar into /tmp/archived-file-set.1702051990.tmp
+[INFO] Expanding: /home/dspace/.m2/repository/commons-lang/commons-lang/1.0/commons-lang-1.0.jar into /tmp/archived-file-set.1706284228.tmp
+[INFO] Expanding: /home/dspace/.m2/repository/junit/junit/3.7/junit-3.7.jar into /tmp/archived-file-set.1714363955.tmp
+[INFO] Expanding: /home/dspace/.m2/repository/commons-codec/commons-codec/1.3/commons-codec-1.3.jar into /tmp/archived-file-set.1532310530.tmp
+[INFO] Expanding: /home/dspace/.m2/repository/log4j/log4j/1.2.14/log4j-1.2.14.jar into /tmp/archived-file-set.1552702221.tmp
+[INFO] Expanding: /home/dspace/.m2/repository/javax/xml/jaxrpc-api/1.1/jaxrpc-api-1.1.jar into /tmp/archived-file-set.1487679657.tmp
+[INFO] Expanding: /home/dspace/.m2/repository/axis/axis/1.3/axis-1.3.jar into /tmp/archived-file-set.1496528882.tmp
+[INFO] Expanding: /home/dspace/.m2/repository/axis/axis-jaxrpc/1.3/axis-jaxrpc-1.3.jar into /tmp/archived-file-set.1495118075.tmp
+[INFO] Expanding: /home/dspace/.m2/repository/axis/axis-saaj/1.2/axis-saaj-1.2.jar into /tmp/archived-file-set.1485499352.tmp
+[INFO] Expanding: /home/dspace/.m2/repository/axis/axis-ant/1.3/axis-ant-1.3.jar into /tmp/archived-file-set.1482806110.tmp
+[INFO] Building jar: /dspace/ucdigitalis-src/dspace162-src-pombalina/dspace-lni/dspace-lni-client/target/dspace-lni-client-1.6.2-jar-with-dependencies.jar
+[INFO] ------------------------------------------------------------------------
+[INFO] Building DSpace OAI
+[INFO]    task-segment: [package]
+[INFO] ------------------------------------------------------------------------
+[INFO] [site:attach-descriptor {execution: default-attach-descriptor}]
+[INFO] ------------------------------------------------------------------------
+[INFO] Building DSpace OAI :: API and Implementation
+[INFO]    task-segment: [package]
+[INFO] ------------------------------------------------------------------------
+[INFO] [resources:resources {execution: default-resources}]
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /dspace/ucdigitalis-src/dspace162-src-pombalina/dspace-oai/dspace-oai-api/src/main/resources
+[INFO] [compiler:compile {execution: default-compile}]
+[INFO] Nothing to compile - all classes are up to date
+[INFO] [resources:testResources {execution: default-testResources}]
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /dspace/ucdigitalis-src/dspace162-src-pombalina/dspace-oai/dspace-oai-api/src/test/resources
+[INFO] [compiler:testCompile {execution: default-testCompile}]
+[INFO] No sources to compile
+[INFO] [surefire:test {execution: default-test}]
+[INFO] No tests to run.
+[INFO] [jar:jar {execution: default-jar}]
+[INFO] ------------------------------------------------------------------------
+[INFO] Building DSpace OAI :: Web Application Resources
+[INFO]    task-segment: [package]
+[INFO] ------------------------------------------------------------------------
+[INFO] [resources:resources {execution: default-resources}]
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /dspace/ucdigitalis-src/dspace162-src-pombalina/dspace-oai/dspace-oai-webapp/src/main/resources
+[INFO] [compiler:compile {execution: default-compile}]
+[INFO] No sources to compile
+[INFO] [resources:testResources {execution: default-testResources}]
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /dspace/ucdigitalis-src/dspace162-src-pombalina/dspace-oai/dspace-oai-webapp/src/test/resources
+[INFO] [compiler:testCompile {execution: default-testCompile}]
+[INFO] No sources to compile
+[INFO] [surefire:test {execution: default-test}]
+[INFO] No tests to run.
+[INFO] [war:war {execution: default-war}]
+[INFO] Packaging webapp
+[INFO] Assembling webapp[dspace-oai-webapp] in [/dspace/ucdigitalis-src/dspace162-src-pombalina/dspace-oai/dspace-oai-webapp/target/dspace-oai-webapp-1.6.2]
+[INFO] Processing war project
+[INFO] Copying webapp webResources[/dspace/ucdigitalis-src/dspace162-src-pombalina/dspace-oai/dspace-oai-webapp/src/main/webapp] to[/dspace/ucdigitalis-src/dspace162-src-pombalina/dspace-oai/dspace-oai-webapp/target/dspace-oai-webapp-1.6.2]
+[INFO] Copying webapp resources[/dspace/ucdigitalis-src/dspace162-src-pombalina/dspace-oai/dspace-oai-webapp/src/main/webapp]
+[INFO] Webapp assembled in [26 msecs]
+[INFO] Building war: /dspace/ucdigitalis-src/dspace162-src-pombalina/dspace-oai/dspace-oai-webapp/target/dspace-oai-webapp-1.6.2.war
+[INFO] ------------------------------------------------------------------------
+[INFO] Building DSpace OAI Extended (by KEEP Solutions)
+[INFO]    task-segment: [package]
+[INFO] ------------------------------------------------------------------------
+[INFO] [site:attach-descriptor {execution: default-attach-descriptor}]
+[INFO] ------------------------------------------------------------------------
+[INFO] Building DSpace OAI Extended (by KEEP Solutions) :: API and Implementation
+[INFO]    task-segment: [package]
+[INFO] ------------------------------------------------------------------------
+[INFO] [resources:resources {execution: default-resources}]
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /dspace/ucdigitalis-src/dspace162-src-pombalina/dspace-oaiextended/dspace-oaiextended-api/src/main/resources
+[INFO] [compiler:compile {execution: default-compile}]
+[INFO] Nothing to compile - all classes are up to date
+[INFO] [resources:testResources {execution: default-testResources}]
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /dspace/ucdigitalis-src/dspace162-src-pombalina/dspace-oaiextended/dspace-oaiextended-api/src/test/resources
+[INFO] [compiler:testCompile {execution: default-testCompile}]
+[INFO] No sources to compile
+[INFO] [surefire:test {execution: default-test}]
+[INFO] No tests to run.
+[INFO] [jar:jar {execution: default-jar}]
+[INFO] ------------------------------------------------------------------------
+[INFO] Building DSpace OAI Extended (by KEEP Solutions) :: Web Application Resources
+[INFO]    task-segment: [package]
+[INFO] ------------------------------------------------------------------------
+[INFO] [resources:resources {execution: default-resources}]
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /dspace/ucdigitalis-src/dspace162-src-pombalina/dspace-oaiextended/dspace-oaiextended-webapp/src/main/resources
+[INFO] [compiler:compile {execution: default-compile}]
+[INFO] No sources to compile
+[INFO] [resources:testResources {execution: default-testResources}]
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /dspace/ucdigitalis-src/dspace162-src-pombalina/dspace-oaiextended/dspace-oaiextended-webapp/src/test/resources
+[INFO] [compiler:testCompile {execution: default-testCompile}]
+[INFO] No sources to compile
+[INFO] [surefire:test {execution: default-test}]
+[INFO] No tests to run.
+[INFO] [war:war {execution: default-war}]
+[INFO] Packaging webapp
+[INFO] Assembling webapp[dspace-oaiextended-webapp] in [/dspace/ucdigitalis-src/dspace162-src-pombalina/dspace-oaiextended/dspace-oaiextended-webapp/target/dspace-oaiextended-webapp-1.6.2]
+[INFO] Processing war project
+[INFO] Copying webapp webResources[/dspace/ucdigitalis-src/dspace162-src-pombalina/dspace-oaiextended/dspace-oaiextended-webapp/src/main/webapp] to[/dspace/ucdigitalis-src/dspace162-src-pombalina/dspace-oaiextended/dspace-oaiextended-webapp/target/dspace-oaiextended-webapp-1.6.2]
+[INFO] Copying webapp resources[/dspace/ucdigitalis-src/dspace162-src-pombalina/dspace-oaiextended/dspace-oaiextended-webapp/src/main/webapp]
+[INFO] Webapp assembled in [26 msecs]
+[INFO] Building war: /dspace/ucdigitalis-src/dspace162-src-pombalina/dspace-oaiextended/dspace-oaiextended-webapp/target/dspace-oaiextended-webapp-1.6.2.war
+[INFO] ------------------------------------------------------------------------
+[INFO] Building DSpace SWORD
+[INFO]    task-segment: [package]
+[INFO] ------------------------------------------------------------------------
+[INFO] [site:attach-descriptor {execution: default-attach-descriptor}]
+[INFO] ------------------------------------------------------------------------
+[INFO] Building DSpace SWORD :: API and Implementation
+[INFO]    task-segment: [package]
+[INFO] ------------------------------------------------------------------------
+[INFO] [resources:resources {execution: default-resources}]
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /dspace/ucdigitalis-src/dspace162-src-pombalina/dspace-sword/dspace-sword-api/src/main/resources
+[INFO] [compiler:compile {execution: default-compile}]
+[INFO] Nothing to compile - all classes are up to date
+[INFO] [resources:testResources {execution: default-testResources}]
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /dspace/ucdigitalis-src/dspace162-src-pombalina/dspace-sword/dspace-sword-api/src/test/resources
+[INFO] [compiler:testCompile {execution: default-testCompile}]
+[INFO] No sources to compile
+[INFO] [surefire:test {execution: default-test}]
+[INFO] No tests to run.
+[INFO] [jar:jar {execution: default-jar}]
+[INFO] ------------------------------------------------------------------------
+[INFO] Building DSpace SWORD :: Web Application Resources
+[INFO]    task-segment: [package]
+[INFO] ------------------------------------------------------------------------
+[INFO] [resources:resources {execution: default-resources}]
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /dspace/ucdigitalis-src/dspace162-src-pombalina/dspace-sword/dspace-sword-webapp/src/main/resources
+[INFO] [compiler:compile {execution: default-compile}]
+[INFO] No sources to compile
+[INFO] [resources:testResources {execution: default-testResources}]
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /dspace/ucdigitalis-src/dspace162-src-pombalina/dspace-sword/dspace-sword-webapp/src/test/resources
+[INFO] [compiler:testCompile {execution: default-testCompile}]
+[INFO] No sources to compile
+[INFO] [surefire:test {execution: default-test}]
+[INFO] No tests to run.
+[INFO] [war:war {execution: default-war}]
+[INFO] Packaging webapp
+[INFO] Assembling webapp[dspace-sword-webapp] in [/dspace/ucdigitalis-src/dspace162-src-pombalina/dspace-sword/dspace-sword-webapp/target/dspace-sword-webapp-1.6.2]
+[INFO] Processing war project
+[INFO] Copying webapp webResources[/dspace/ucdigitalis-src/dspace162-src-pombalina/dspace-sword/dspace-sword-webapp/src/main/webapp] to[/dspace/ucdigitalis-src/dspace162-src-pombalina/dspace-sword/dspace-sword-webapp/target/dspace-sword-webapp-1.6.2]
+[INFO] Copying webapp resources[/dspace/ucdigitalis-src/dspace162-src-pombalina/dspace-sword/dspace-sword-webapp/src/main/webapp]
+[INFO] Webapp assembled in [17 msecs]
+[INFO] Building war: /dspace/ucdigitalis-src/dspace162-src-pombalina/dspace-sword/dspace-sword-webapp/target/dspace-sword-webapp-1.6.2.war
+[INFO] ------------------------------------------------------------------------
+[INFO] Building DSpace Addon Modules
+[INFO]    task-segment: [package]
+[INFO] ------------------------------------------------------------------------
+[INFO] [site:attach-descriptor {execution: default-attach-descriptor}]
+[INFO] ------------------------------------------------------------------------
+[INFO] Building DSpace XML-UI (Manakin) :: Web Application
+[INFO]    task-segment: [package]
+[INFO] ------------------------------------------------------------------------
+[INFO] [resources:resources {execution: default-resources}]
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /dspace/ucdigitalis-src/dspace162-src-pombalina/dspace/modules/xmlui/src/main/resources
+[INFO] artifact org.dspace:dspace-xmlui-lang: checking for updates from java.net
+[INFO] [compiler:compile {execution: default-compile}]
+[INFO] No sources to compile
+[INFO] [resources:testResources {execution: default-testResources}]
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /dspace/ucdigitalis-src/dspace162-src-pombalina/dspace/modules/xmlui/src/test/resources
+[INFO] [compiler:testCompile {execution: default-testCompile}]
+[INFO] No sources to compile
+[INFO] [surefire:test {execution: default-test}]
+[INFO] No tests to run.
+[INFO] [war:war {execution: default-war}]
+[INFO] Packaging webapp
+[INFO] Assembling webapp[xmlui] in [/dspace/ucdigitalis-src/dspace162-src-pombalina/dspace/modules/xmlui/target/xmlui-1.6.2]
+[INFO] Processing war project
+[INFO] Copying webapp webResources[/dspace/ucdigitalis-src/dspace162-src-pombalina/dspace/modules/xmlui/src/main/webapp] to[/dspace/ucdigitalis-src/dspace162-src-pombalina/dspace/modules/xmlui/target/xmlui-1.6.2]
+[INFO] Copying webapp resources[/dspace/ucdigitalis-src/dspace162-src-pombalina/dspace/modules/xmlui/src/main/webapp]
+[INFO] Processing overlay[ id org.dspace:dspace-xmlui-lang]
+[INFO] Processing overlay[ id org.dspace:dspace-xmlui-webapp]
+[INFO] Webapp assembled in [98 msecs]
+[INFO] Building war: /dspace/ucdigitalis-src/dspace162-src-pombalina/dspace/modules/xmlui/target/xmlui-1.6.2.war
+[INFO] ------------------------------------------------------------------------
+[INFO] Building DSpace LNI :: Web Application
+[INFO]    task-segment: [package]
+[INFO] ------------------------------------------------------------------------
+[INFO] [resources:resources {execution: default-resources}]
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /dspace/ucdigitalis-src/dspace162-src-pombalina/dspace/modules/lni/src/main/resources
+[INFO] [compiler:compile {execution: default-compile}]
+[INFO] No sources to compile
+[INFO] [resources:testResources {execution: default-testResources}]
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /dspace/ucdigitalis-src/dspace162-src-pombalina/dspace/modules/lni/src/test/resources
+[INFO] [compiler:testCompile {execution: default-testCompile}]
+[INFO] No sources to compile
+[INFO] [surefire:test {execution: default-test}]
+[INFO] No tests to run.
+[INFO] [war:war {execution: default-war}]
+[INFO] Packaging webapp
+[INFO] Assembling webapp[lni] in [/dspace/ucdigitalis-src/dspace162-src-pombalina/dspace/modules/lni/target/lni-1.6.2]
+[INFO] Processing war project
+[INFO] Copying webapp webResources[/dspace/ucdigitalis-src/dspace162-src-pombalina/dspace/modules/lni/src/main/webapp] to[/dspace/ucdigitalis-src/dspace162-src-pombalina/dspace/modules/lni/target/lni-1.6.2]
+[INFO] Copying webapp resources[/dspace/ucdigitalis-src/dspace162-src-pombalina/dspace/modules/lni/src/main/webapp]
+[INFO] Processing overlay[ id org.dspace:dspace-lni-webapp]
+[INFO] Webapp assembled in [20 msecs]
+[INFO] Building war: /dspace/ucdigitalis-src/dspace162-src-pombalina/dspace/modules/lni/target/lni-1.6.2.war
+[INFO] ------------------------------------------------------------------------
+[INFO] Building DSpace OAI :: Web Application
+[INFO]    task-segment: [package]
+[INFO] ------------------------------------------------------------------------
+[INFO] [resources:resources {execution: default-resources}]
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /dspace/ucdigitalis-src/dspace162-src-pombalina/dspace/modules/oai/src/main/resources
+[INFO] [compiler:compile {execution: default-compile}]
+[INFO] No sources to compile
+[INFO] [resources:testResources {execution: default-testResources}]
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /dspace/ucdigitalis-src/dspace162-src-pombalina/dspace/modules/oai/src/test/resources
+[INFO] [compiler:testCompile {execution: default-testCompile}]
+[INFO] No sources to compile
+[INFO] [surefire:test {execution: default-test}]
+[INFO] No tests to run.
+[INFO] [war:war {execution: default-war}]
+[INFO] Packaging webapp
+[INFO] Assembling webapp[oai] in [/dspace/ucdigitalis-src/dspace162-src-pombalina/dspace/modules/oai/target/oai-1.6.2]
+[INFO] Processing war project
+[INFO] Copying webapp webResources[/dspace/ucdigitalis-src/dspace162-src-pombalina/dspace/modules/oai/src/main/webapp] to[/dspace/ucdigitalis-src/dspace162-src-pombalina/dspace/modules/oai/target/oai-1.6.2]
+[INFO] Copying webapp resources[/dspace/ucdigitalis-src/dspace162-src-pombalina/dspace/modules/oai/src/main/webapp]
+[INFO] Processing overlay[ id org.dspace:dspace-oai-webapp]
+[INFO] Webapp assembled in [28 msecs]
+[INFO] Building war: /dspace/ucdigitalis-src/dspace162-src-pombalina/dspace/modules/oai/target/oai-1.6.2.war
+[INFO] ------------------------------------------------------------------------
+[INFO] Building DSpace OAI Extended :: Web Application
+[INFO]    task-segment: [package]
+[INFO] ------------------------------------------------------------------------
+[INFO] [resources:resources {execution: default-resources}]
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /dspace/ucdigitalis-src/dspace162-src-pombalina/dspace/modules/oaiextended/src/main/resources
+[INFO] [compiler:compile {execution: default-compile}]
+[INFO] No sources to compile
+[INFO] [resources:testResources {execution: default-testResources}]
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /dspace/ucdigitalis-src/dspace162-src-pombalina/dspace/modules/oaiextended/src/test/resources
+[INFO] [compiler:testCompile {execution: default-testCompile}]
+[INFO] No sources to compile
+[INFO] [surefire:test {execution: default-test}]
+[INFO] No tests to run.
+[INFO] [war:war {execution: default-war}]
+[INFO] Packaging webapp
+[INFO] Assembling webapp[oaiextended] in [/dspace/ucdigitalis-src/dspace162-src-pombalina/dspace/modules/oaiextended/target/oaiextended-1.6.2]
+[INFO] Processing war project
+[INFO] Copying webapp webResources[/dspace/ucdigitalis-src/dspace162-src-pombalina/dspace/modules/oaiextended/src/main/webapp] to[/dspace/ucdigitalis-src/dspace162-src-pombalina/dspace/modules/oaiextended/target/oaiextended-1.6.2]
+[INFO] Copying webapp resources[/dspace/ucdigitalis-src/dspace162-src-pombalina/dspace/modules/oaiextended/src/main/webapp]
+[INFO] Processing overlay[ id org.dspace:dspace-oaiextended-webapp]
+[INFO] Webapp assembled in [21 msecs]
+[INFO] Building war: /dspace/ucdigitalis-src/dspace162-src-pombalina/dspace/modules/oaiextended/target/oaiextended-1.6.2.war
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Cover Page module
+[INFO]    task-segment: [package]
+[INFO] ------------------------------------------------------------------------
+[INFO] [resources:resources {execution: default-resources}]
+[WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] skip non existing resourceDirectory /dspace/ucdigitalis-src/dspace162-src-pombalina/dspace/modules/cover/src/main/resources
+[INFO] [compiler:compile {execution: default-compile}]
+[INFO] Nothing to compile - all classes are up to date
+[INFO] [resources:testResources {execution: default-testResources}]
+[WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] skip non existing resourceDirectory /dspace/ucdigitalis-src/dspace162-src-pombalina/dspace/modules/cover/src/test/resources
+[INFO] [compiler:testCompile {execution: default-testCompile}]
+[INFO] No sources to compile
+[INFO] [surefire:test {execution: default-test}]
+[INFO] No tests to run.
+[INFO] [jar:jar {execution: default-jar}]
+[INFO] ------------------------------------------------------------------------
+[INFO] Building DSpace JSP-UI :: Web Application
+[INFO]    task-segment: [package]
+[INFO] ------------------------------------------------------------------------
+[INFO] [resources:resources {execution: default-resources}]
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 0 resource
+[INFO] [compiler:compile {execution: default-compile}]
+[INFO] Nothing to compile - all classes are up to date
+[INFO] [resources:testResources {execution: default-testResources}]
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /dspace/ucdigitalis-src/dspace162-src-pombalina/dspace/modules/jspui/src/test/resources
+[INFO] [compiler:testCompile {execution: default-testCompile}]
+[INFO] No sources to compile
+[INFO] [surefire:test {execution: default-test}]
+[INFO] No tests to run.
+[INFO] [war:war {execution: default-war}]
+[INFO] Packaging webapp
+[INFO] Assembling webapp[jspui] in [/dspace/ucdigitalis-src/dspace162-src-pombalina/dspace/modules/jspui/target/jspui-1.6.2]
+[INFO] Processing war project
+[INFO] Copying webapp webResources[/dspace/ucdigitalis-src/dspace162-src-pombalina/dspace/modules/jspui/src/main/webapp] to[/dspace/ucdigitalis-src/dspace162-src-pombalina/dspace/modules/jspui/target/jspui-1.6.2]
+[INFO] Copying webapp resources[/dspace/ucdigitalis-src/dspace162-src-pombalina/dspace/modules/jspui/src/main/webapp]
+[INFO] Processing overlay[ id org.dspace:dspace-jspui-webapp]
+[INFO] Webapp assembled in [170 msecs]
+[INFO] Building war: /dspace/ucdigitalis-src/dspace162-src-pombalina/dspace/modules/jspui/target/jspui-1.6.2.war
+[INFO] ------------------------------------------------------------------------
+[INFO] Building DSpace SWORD :: Web Application
+[INFO]    task-segment: [package]
+[INFO] ------------------------------------------------------------------------
+[INFO] [resources:resources {execution: default-resources}]
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /dspace/ucdigitalis-src/dspace162-src-pombalina/dspace/modules/sword/src/main/resources
+[INFO] [compiler:compile {execution: default-compile}]
+[INFO] No sources to compile
+[INFO] [resources:testResources {execution: default-testResources}]
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /dspace/ucdigitalis-src/dspace162-src-pombalina/dspace/modules/sword/src/test/resources
+[INFO] [compiler:testCompile {execution: default-testCompile}]
+[INFO] No sources to compile
+[INFO] [surefire:test {execution: default-test}]
+[INFO] No tests to run.
+[INFO] [war:war {execution: default-war}]
+[INFO] Packaging webapp
+[INFO] Assembling webapp[sword] in [/dspace/ucdigitalis-src/dspace162-src-pombalina/dspace/modules/sword/target/sword-1.6.2]
+[INFO] Processing war project
+[INFO] Copying webapp webResources[/dspace/ucdigitalis-src/dspace162-src-pombalina/dspace/modules/sword/src/main/webapp] to[/dspace/ucdigitalis-src/dspace162-src-pombalina/dspace/modules/sword/target/sword-1.6.2]
+[INFO] Copying webapp resources[/dspace/ucdigitalis-src/dspace162-src-pombalina/dspace/modules/sword/src/main/webapp]
+[INFO] Processing overlay[ id org.dspace:dspace-sword-webapp]
+[INFO] Webapp assembled in [36 msecs]
+[INFO] Building war: /dspace/ucdigitalis-src/dspace162-src-pombalina/dspace/modules/sword/target/sword-1.6.2.war
+[INFO] ------------------------------------------------------------------------
+[INFO] Building DSpace SOLR :: Web Application
+[INFO]    task-segment: [package]
+[INFO] ------------------------------------------------------------------------
+[INFO] [resources:resources {execution: default-resources}]
+[WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] skip non existing resourceDirectory /dspace/ucdigitalis-src/dspace162-src-pombalina/dspace/modules/solr/src/main/resources
+Downloading: http://repo1.maven.org/maven2/woodstox/wstx-asl/3.2.7/wstx-asl-3.2.7.pom
+[INFO] Unable to find resource 'woodstox:wstx-asl:pom:3.2.7' in repository central (http://repo1.maven.org/maven2)
+[INFO] [compiler:compile {execution: default-compile}]
+[INFO] No sources to compile
+[INFO] [resources:testResources {execution: default-testResources}]
+[WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] skip non existing resourceDirectory /dspace/ucdigitalis-src/dspace162-src-pombalina/dspace/modules/solr/src/test/resources
+[INFO] [compiler:testCompile {execution: default-testCompile}]
+[INFO] No sources to compile
+[INFO] [surefire:test {execution: default-test}]
+[INFO] No tests to run.
+[INFO] [war:war {execution: default-war}]
+[INFO] Packaging webapp
+[INFO] Assembling webapp[solr] in [/dspace/ucdigitalis-src/dspace162-src-pombalina/dspace/modules/solr/target/solr-1.6.2]
+[INFO] Dependency[Dependency {groupId=org.dspace, artifactId=dspace-solr, version=1.3.0.2, type=jar}] has changed (was Dependency {groupId=org.dspace, artifactId=dspace-solr, version=1.3.0.2, type=jar}).
+[WARNING] Dependency[Dependency {groupId=org.dspace, artifactId=dspace-solr, version=1.3.0.2, type=war}] has changed (was Dependency {groupId=org.dspace, artifactId=dspace-solr, version=1.3.0.2, type=war}). If it was included in the build as an overlay, consider cleaning the target directory of the project (mvn clean)
+[INFO] Dependency[Dependency {groupId=xalan, artifactId=xalan, version=2.7.0, type=jar}] has changed (was Dependency {groupId=xalan, artifactId=xalan, version=2.7.0, type=jar}).
+[INFO] Processing war project
+[INFO] Processing overlay[ id org.dspace:dspace-solr:skinny]
+[INFO] Webapp assembled in[53 msecs]
+[INFO] Building war: /dspace/ucdigitalis-src/dspace162-src-pombalina/dspace/modules/solr/target/solr-1.6.2.war
+[INFO] ------------------------------------------------------------------------
+[INFO] Building DSpace Assembly and Configuration
+[INFO]    task-segment: [package]
+[INFO] ------------------------------------------------------------------------
+[INFO] [site:attach-descriptor {execution: default-attach-descriptor}]
+[INFO] [assembly:directory-single {execution: default}]
+[INFO] Reading assembly descriptor: /dspace/ucdigitalis-src/dspace162-src-pombalina/dspace/src/assemble/assembly.xml
+[INFO] Initializing assembly filters...
+[INFO] Expanding: /dspace/ucdigitalis-src/dspace162-src-pombalina/dspace/modules/jspui/target/jspui-1.6.2.war into /tmp/archived-file-set.306553907.tmp
+[INFO] Expanding: /dspace/ucdigitalis-src/dspace162-src-pombalina/dspace/modules/lni/target/lni-1.6.2.war into /tmp/archived-file-set.1814087549.tmp
+[INFO] Expanding: /dspace/ucdigitalis-src/dspace162-src-pombalina/dspace/modules/sword/target/sword-1.6.2.war into /tmp/archived-file-set.1777574082.tmp
+[INFO] Expanding: /dspace/ucdigitalis-src/dspace162-src-pombalina/dspace/modules/oaiextended/target/oaiextended-1.6.2.war into /tmp/archived-file-set.1231284389.tmp
+[INFO] Expanding: /dspace/ucdigitalis-src/dspace162-src-pombalina/dspace/modules/oai/target/oai-1.6.2.war into /tmp/archived-file-set.1055838891.tmp
+[INFO] Expanding: /dspace/ucdigitalis-src/dspace162-src-pombalina/dspace/modules/xmlui/target/xmlui-1.6.2.war into /tmp/archived-file-set.797287630.tmp
+[INFO] ------------------------------------------------------------------------
+[ERROR] BUILD ERROR
+[INFO] ------------------------------------------------------------------------
+[INFO] Error creating assembly: Error adding file-set for 'org.dspace.modules:xmlui:war:1.6.2' to archive: Error while expanding /dspace/ucdigitalis-src/dspace162-src-pombalina/dspace/modules/xmlui/target/xmlui-1.6.2.war
+
+No space left on device
+[INFO] ------------------------------------------------------------------------
+[INFO] For more information, run Maven with the -e switch
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 25 seconds
+[INFO] Finished at: Fri Apr 12 13:15:49 WEST 2013
+[INFO] Final Memory: 71M/1151M
+[INFO] ------------------------------------------------------------------------

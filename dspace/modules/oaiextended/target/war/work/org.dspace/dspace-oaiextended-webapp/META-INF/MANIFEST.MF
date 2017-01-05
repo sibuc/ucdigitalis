@@ -1,0 +1,15 @@
+Manifest-Version: 1.0
+Archiver-Version: Plexus Archiver
+Created-By: Apache Maven
+Built-By: dspace
+Build-Jdk: 1.6.0_41
+Specification-Title: DSpace OAI Extended (by KEEP Solutions) :: Web Ap
+ plication Resources
+Specification-Version: 1.6.2
+Specification-Vendor: DuraSpace
+Implementation-Title: DSpace OAI Extended (by KEEP Solutions) :: Web A
+ pplication Resources
+Implementation-Version: 1.6.2
+Implementation-Vendor-Id: org.dspace
+Implementation-Vendor: DuraSpace
+

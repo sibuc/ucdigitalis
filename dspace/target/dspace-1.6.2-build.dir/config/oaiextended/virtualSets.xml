@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<virtualSets>
+	<set>
+		<setSpec>driver</setSpec>
+		<setName>Driver Set</setName>
+	</set>
+	<set>
+		<setSpec>ec_fundedresources</setSpec>
+		<setName>EC Funded Resources Set</setName>
+	</set>
+	<set>
+		<setSpec>thesis</setSpec>
+		<setName>Doctoral and Master Thesis</setName>
+	</set>
+	<set>
+		<setSpec>almamater</setSpec>
+		<setName>Biblioteca Digital da UC</setName>
+	</set>
+	<set>
+		<setSpec>pombalina</setSpec>
+		<setName>Biblioteca Digital da UC - Livros</setName>
+	</set>
+	<set>
+		<setSpec>impactum</setSpec>
+		<setName>Biblioteca Digital da UC - Periodicos</setName>
+	</set>
+	<set>
+		<setSpec>republica</setSpec>
+		<setName>Biblioteca Digital da UC - Republica</setName>
+	</set>
+	<set>
+		<setSpec>almamater_ucbg</setSpec>
+		<setName>Biblioteca Digital da UC</setName>
+	</set>
+</virtualSets>

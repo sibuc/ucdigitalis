@@ -1,0 +1,17 @@
+<webapp-structure>
+  <registeredFiles>
+    <entry>
+      <string>currentBuild</string>
+      <path-set>
+        <pathsSet class="linked-hash-set">
+          <string>static/js/scriptaculous/prototype.js</string>
+          <string>static/js/scriptaculous/effects.js</string>
+          <string>static/js/scriptaculous/controls.js</string>
+          <string>static/js/scriptaculous/builder.js</string>
+          <string>static/js/choice-support.js</string>
+        </pathsSet>
+      </path-set>
+    </entry>
+  </registeredFiles>
+  <dependenciesInfo/>
+</webapp-structure>

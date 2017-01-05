@@ -1,0 +1,126 @@
+Index: dspace-api/src/main/java/org/dspace/app/util/Util.java
+===================================================================
+--- dspace-api/src/main/java/org/dspace/app/util/Util.java	(revision 4520)
++++ dspace-api/src/main/java/org/dspace/app/util/Util.java	(working copy)
+@@ -37,10 +37,13 @@
+  */
+ package org.dspace.app.util;
+ 
++import java.io.InputStream;
++import java.io.IOException;
+ import java.text.DecimalFormat;
+ import java.text.NumberFormat;
+ import java.util.Enumeration;
+ import java.util.Locale;
++import java.util.Properties;
+ 
+ import javax.servlet.http.HttpServletRequest;
+ 
+@@ -56,6 +59,8 @@
+  * @version $Revision$
+  */
+ public class Util {
++        // cache for source version result
++        private static String sourceVersion = null;
+ 
+ 	private static Logger log = Logger.getLogger(Util.class);
+ 	
+@@ -336,5 +341,21 @@
+         return def;
+     }
+ 
+-    
++    /**
++     * Gets Maven version string of the source that built this instance.
++     * @return string containing version, e.g. "1.5.2"; ends in "-SNAPSHOT" for development versions.
++     */
++    public static String getSourceVersion()
++        throws IOException
++    {
++        if (sourceVersion == null)
++        {
++            InputStream cis = Util.class.getResourceAsStream
++                ("/META-INF/maven/org.dspace/dspace-api/pom.properties");
++            Properties constants = new Properties();
++            constants.load(cis);
++            sourceVersion = constants.getProperty("version", "none");
+ }
++        return sourceVersion;
++    }
++}
+Index: dspace-jspui/dspace-jspui-webapp/src/main/webapp/layout/header-default.jsp
+===================================================================
+--- dspace-jspui/dspace-jspui-webapp/src/main/webapp/layout/header-default.jsp	(revision 4520)
++++ dspace-jspui/dspace-jspui-webapp/src/main/webapp/layout/header-default.jsp	(working copy)
+@@ -51,6 +51,7 @@
+ <%@ page import="java.util.Enumeration"%>
+ <%@ page import="org.dspace.app.webui.util.JSPManager" %>
+ <%@ page import="org.dspace.core.ConfigurationManager" %>
++<%@ page import="org.dspace.app.util.Util" %>
+ <%@ page import="javax.servlet.jsp.jstl.core.*" %>
+ <%@ page import="javax.servlet.jsp.jstl.fmt.*" %>
+ 
+@@ -66,6 +67,8 @@
+     String osName = ConfigurationManager.getProperty("websvc.opensearch.shortname");
+     List parts = (List)request.getAttribute("dspace.layout.linkparts");
+     String extraHeadData = (String)request.getAttribute("dspace.layout.head");
++    String dsVersion = Util.getSourceVersion();
++    String generator = dsVersion == null ? "DSpace" : "DSpace "+dsVersion;
+ %>
+ 
+ <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+@@ -73,7 +76,7 @@
+     <head>
+         <title><%= siteName %>: <%= title %></title>
+         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+-        <meta name="Generator" content="DSpace" />
++        <meta name="Generator" content="<%= generator %>" />
+         <link rel="stylesheet" href="<%= request.getContextPath() %>/styles.css.jsp" type="text/css" />
+         <link rel="stylesheet" href="<%= request.getContextPath() %>/print.css" media="print" type="text/css" />
+         <link rel="shortcut icon" href="<%= request.getContextPath() %>/favicon.ico" type="image/x-icon"/>
+Index: dspace-xmlui/dspace-xmlui-api/src/main/java/org/dspace/app/xmlui/aspect/artifactbrowser/Navigation.java
+===================================================================
+--- dspace-xmlui/dspace-xmlui-api/src/main/java/org/dspace/app/xmlui/aspect/artifactbrowser/Navigation.java	(revision 4520)
++++ dspace-xmlui/dspace-xmlui-api/src/main/java/org/dspace/app/xmlui/aspect/artifactbrowser/Navigation.java	(working copy)
+@@ -66,6 +66,7 @@
+ import org.dspace.content.Community;
+ import org.dspace.content.DSpaceObject;
+ import org.dspace.content.Item;
++import org.dspace.app.util.Util;
+ import org.dspace.core.ConfigurationManager;
+ import org.xml.sax.SAXException;
+ 
+@@ -203,6 +204,12 @@
+         pageMeta.addMetadata("request","serverName").addContent(request.getServerName());
+         pageMeta.addMetadata("request","URI").addContent(request.getSitemapURI());
+         
++        String dspaceVersion = Util.getSourceVersion();
++        if (dspaceVersion != null)
++        {
++            pageMeta.addMetadata("dspace","version").addContent(dspaceVersion);
++        }
++        
+         String analyticsKey = ConfigurationManager.getProperty("xmlui.google.analytics.key");
+         if (analyticsKey != null && analyticsKey.length() > 0)
+         {
+Index: dspace-xmlui/dspace-xmlui-webapp/src/main/webapp/themes/dri2xhtml/structural.xsl
+===================================================================
+--- dspace-xmlui/dspace-xmlui-webapp/src/main/webapp/themes/dri2xhtml/structural.xsl	(revision 4520)
++++ dspace-xmlui/dspace-xmlui-webapp/src/main/webapp/themes/dri2xhtml/structural.xsl	(working copy)
+@@ -164,7 +164,15 @@
+     <xsl:template name="buildHead">
+         <head>
+             <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+-            <meta name="Generator" content="DSpace" />
++            <meta name="Generator">
++              <xsl:attribute name="content">
++                <xsl:text>DSpace</xsl:text>
++                <xsl:if test="/dri:document/dri:meta/dri:pageMeta/dri:metadata[@element='dspace'][@qualifier='version']">
++                  <xsl:text> </xsl:text>
++                  <xsl:value-of select="/dri:document/dri:meta/dri:pageMeta/dri:metadata[@element='dspace'][@qualifier='version']"/>
++                </xsl:if>
++              </xsl:attribute>
++            </meta>
+             <!-- Add stylsheets -->
+             <xsl:for-each select="/dri:document/dri:meta/dri:pageMeta/dri:metadata[@element='stylesheet']">
+                 <link rel="stylesheet" type="text/css">
